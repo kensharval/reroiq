@@ -1,0 +1,22 @@
+fnc moreToDo (i mut: xb, i2: xb) (o: 1b, o2 mut: xb) [
+	val [		
+		// Some validation work.
+
+		mcr [
+			...
+
+			ini []
+			dni []
+		]
+		
+	]
+
+	// some other action
+]
+mcr [
+	m1: 1b
+	m2: 1b
+
+	ini []
+	dni []
+]

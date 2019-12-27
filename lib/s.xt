@@ -1,0 +1,28 @@
+typ SomeType [
+	dmn1 mut: 3b = 010
+	dmn2: 2b
+] cns (i mut: 32b) (o: 16b) [
+	mcr [
+		...
+
+		ini []
+		dni []
+	]
+
+	end new [dmn2 = 01]
+	// data := new (01)
+] des []
+
+// ana Some () (...) []
+
+mtd Tome () (...) [
+	@.dmn1 = 101
+]
+
+mcr [
+	m1: 4b
+	m2: 3b
+
+	ini []
+	dni []
+]

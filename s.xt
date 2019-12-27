@@ -1,0 +1,24 @@
+use [
+	"":v3.2.3 as xyz
+	"":v1 as abc
+]
+
+prm [
+	someGene := xyz!.Println ($t, {$23}, $'x')
+	gne x: 3b = xyz!.Println ($f, {$23}, $"x")
+
+	(someGene, x) concern (x: 3b, y: 4b) [
+	]
+
+	someGne2 := abc!.Type.New ()
+]
+mcr [
+ 	x: someGene
+ 	y: 12b
+
+ 	ini [
+		x# = ~0
+		y# = ~1
+ 	]
+ 	dni []
+]

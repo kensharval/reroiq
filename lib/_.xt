@@ -1,0 +1,9 @@
+mcr [
+	...
+
+	ini [
+		// Initialization operation.
+	]
+	dni [
+	]
+]
