@@ -7,7 +7,7 @@ prm [
 	someGene := xyz!.Println ($t, {$23}, $'x')
 	gne x: 3b = xyz!.Println ($f, {$23}, $"x")
 
-	(someGene, x) concern (x: 3b, y: 4b) [
+	(someGene, x) someConcern (x: 3b, y: 4b) [
 	]
 
 	someGne2 := abc!.Type.New ()
