@@ -1,0 +1,41 @@
+gne {
+	someGne0
+	someGene 00100001:8
+	someGne2 mut 00100001:8
+	someGne3 mut {
+		dmn1Name 10011110:8,
+		dmn2Name 01110000:8
+	}
+}
+
+someGne0 = 10010011:8
+
+someGene ~ 00001111:8
+
+someGene g 11:2 f
+someGne2 g 00:2 2
+someGne3 g 10:2 b
+
+someGne0 l 2 f
+someGne2 l 2 2
+someGne3 l 9 b
+
+gne {
+	someGne4 someGne0 [1]
+	someGne5 someGne0 [1-3]
+	someGne6 someGne0
+}
+
+someGne0 [1-9] ~ 010010001:9
+gne someGneT lnt (someGne0)
+
+if someGne0 idn someGne2 {
+	// Some opr.
+} odn:
+
+someGne3 g 10:2 f
+!
+
+itr {
+	// Some action.
+} edl
