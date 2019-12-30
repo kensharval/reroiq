@@ -1,0 +1,33 @@
+puT "01001011:8, #mem1, 1, a" (crT): 100
+
+puT "vlD~100, $rgt1, 1, d": 110
+
+puT "gnE~100, $rgt1, 1, a": 120
+
+ftH "3, #mem1, l, d": 130
+
+rvS "#mem"
+
+ifF "vlD~100 idN 0:1": [
+	enD
+]
+orN:
+enD
+!
+
+ifF "...": ... !
+orN: ... !
+
+itT [
+	...
+] ~
+
+chS [
+	0100:4, 0101:4, 1000:4 [
+		...
+	]
+
+	dfT [
+		...		
+	]
+] #abc, $ijk, $xyz
