@@ -1,12 +1,12 @@
-puT "01001011:8, #mem1, 1, asN, crT": 100
+puT "01001011:8, !mem1, 1, asN, crT": 100
 
-puT "vlD~100, $rgt1, 1, dsN": 110
+puT "vlD~100, @rgt1, 1, dsN": 110
 
-puT "gnE~100, $rgt1, 1, asN": 120
+puT "gnE~100, @rgt1, 1, asN": 120
 
-ftH "3, #mem1, lsT, dsN": 130
+ftH "3, !mem1, lsT, dsN": 130
 
-lnT "#mem1": 140
+lnT "!mem1": 140
 
 ifF "vlD~100 idN 0:1": [
 	enD
@@ -20,7 +20,7 @@ orN: ... !
 
 itT [
 	...
-] ~
+] enL
 
 chS [
 	0100:4, 0101:4, 1000:4 [
@@ -30,9 +30,9 @@ chS [
 	dfT [
 		...		
 	]
-] #abc, $ijk, $xyz
+] !abc, @ijk, @xyz
 
+variable execution
 mathematical ops
 specific itt
 if else if
-variable execution
