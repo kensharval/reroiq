@@ -1,12 +1,12 @@
-puT "01001011:8, #mem1, 1, a" (crT): 100
+puT "01001011:8, #mem1, 1, asN, crT": 100
 
-puT "vlD~100, $rgt1, 1, d": 110
+puT "vlD~100, $rgt1, 1, dsN": 110
 
-puT "gnE~100, $rgt1, 1, a": 120
+puT "gnE~100, $rgt1, 1, asN": 120
 
-ftH "3, #mem1, l, d": 130
+ftH "3, #mem1, lsT, dsN": 130
 
-rvS "#mem"
+lnT "#mem1": 140
 
 ifF "vlD~100 idN 0:1": [
 	enD
@@ -31,3 +31,8 @@ chS [
 		...		
 	]
 ] #abc, $ijk, $xyz
+
+mathematical ops
+specific itt
+if else if
+variable execution
