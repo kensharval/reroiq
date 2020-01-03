@@ -1,12 +1,33 @@
-puT "01001011:8, !mem1, 1, asN, crT": 100
+mkE {0001:4, xyz}
+adD {1001:4, wcL:#memX, n}
+adD {1001:4, cLD:#memX, n}
+puT {0011:4, 1, #memX}
 
-puT "vlD~100, @rgt1, 1, dsN": 110
 
-puT "gnE~100, @rgt1, 1, asN": 120
+rdD
+rmV
+rvS
 
-ftH "3, !mem1, lsT, dsN": 130
+upD {10000001:8, !memA, b, crT}: 120
+puT {10010011:8, !memB, a, crT}: 100
+puT {01101100:8, !memY, 4, upD}: 110
+puT {10000001:8, !memZ, z, ovR}: 120
+puT {10000001:8, !memZ, e, ovR}: 120
+ftH {3, !memX, b}
+rvS {@rgtX}
+vlD:100
+rsL:110
+lnT {rvS}
 
-lnT "!mem1": 140
+puT "01001011:8, !mem1, 1, asN, crT" - 100
+
+puT "vlD~100, @rgt1, 1, dsN" - 110
+
+puT "gnE~100, @rgt1, 1, asN" - 120
+
+ftH "3, !mem1, lsT, dsN" - 130
+
+lnT "!mem1" - 140 ???
 
 ifF "vlD~100 idN 0:1": [
 	enD
@@ -20,7 +41,7 @@ orN: ... !
 
 itT [
 	...
-] enL
+] enS
 
 chS [
 	0100:4, 0101:4, 1000:4 [
