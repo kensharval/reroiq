@@ -1,7 +1,6 @@
-if$$ .... [
+if$$ @memX idnt $regX [
 	....
 ]
-	@memX idnt $regX
 	@memX idnt {$regX, $regY, $regZ}
 	()
 	&
@@ -24,17 +23,17 @@ ordn [
 --------
 
 
-chse [
+chse @memX [
 	0000:4, 0001:4: []
 	0010:4 []
 	dflt []
-] @memX
+]
 
 
 --------
 
 
-rept [
+rept 4 [
 	itrn 1 [
 		....
 	]
@@ -45,7 +44,7 @@ rept [
 		....
 	]
 
-] 4
+]
 
 
 --------
