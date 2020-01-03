@@ -1,0 +1,18 @@
+if$$ ... [
+	...
+]
+	@memX idnt $regX
+	@memX idnt {$regX, $regY, $regZ}
+	()
+	&
+	|
+	!
+
+ordn [
+	...
+] altn ... [
+	...
+] altn ... [
+	...
+]
+
