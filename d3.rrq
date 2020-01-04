@@ -1,7 +1,7 @@
-if|| {@memX idnt $regX} [
+if|| {#memX idnt $regX} [
 	....
 ]
-	@memX idnt {$regX, $regY, $regZ}
+	#memX idnt {$regX, $regY, $regZ}
 	()
 	&
 	|
@@ -23,7 +23,7 @@ ordn [
 --------
 
 
-chse {@memX} [
+chse {#memX} [
 	0000:4, 0001:4: []
 	0010:4 []
 	dflt []
