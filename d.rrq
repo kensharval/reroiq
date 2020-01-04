@@ -5,12 +5,19 @@ $regX
 ----
 
 
-end$
+end?
 
 
 ----
 
-gene
+
+stream
+data
 container
 command
 prompt
+
+consequence
+crest
+error detail
+result

@@ -1,4 +1,4 @@
-if$$ @memX idnt $regX [
+if|| {@memX idnt $regX} [
 	....
 ]
 	@memX idnt {$regX, $regY, $regZ}
@@ -13,9 +13,9 @@ if$$ @memX idnt $regX [
 
 ordn [
 	....
-] altn .... [
+] btIf {....} [
 	....
-] altn .... [
+] btIf {....} [
 	....
 ]
 
@@ -23,7 +23,7 @@ ordn [
 --------
 
 
-chse @memX [
+chse {@memX} [
 	0000:4, 0001:4: []
 	0010:4 []
 	dflt []
@@ -53,3 +53,4 @@ rept 4 [
 cycl [
 	....
 ]
+

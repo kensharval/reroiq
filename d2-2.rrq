@@ -1,0 +1,12 @@
+read {2, 1, @memInputXxxxxxxx}: 10
+if|| {crst:10 idnt 0:1} [
+	end|
+]
+
+add| {rslt:10, n, #someReg}: 20 ||
+
+	crte {#someReg}: 15
+	if|| {crst:15 idnt 0:1} [
+		end|
+	]
+||
