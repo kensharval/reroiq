@@ -1,56 +1,69 @@
-if|| {#memX idnt $regX} [
-	....
-]
-	#memX idnt {$regX, $regY, $regZ}
-	()
-	&
-	|
-	!
+crte {cntnr}: 10
+	crst:10
+	erDt:10
 
+Command "crte" creates a container.
 
---------
-
-
-ordn [
-	....
-] btIf {....} [
-	....
-] btIf {....} [
-	....
-]
-
+	Prompt "crst" gives 0 on failure, and 1 on success.
+	Prompt "erDt" provides the ID of the kind of error that occured. This prompt should
+		only be used when prompt "crst" gives 1. Possible values include: 0 (name
+		already in use).
 
 --------
 
+add| {0010:4, n, cntnr}: 20
+	crst:20
+	erDt:20
 
-chse {#memX} [
-	0000:4, 0001:4: []
-	0010:4 []
-	dflt []
-]
+Command "add$" add a gene to a container.
 
-
---------
-
-
-rept 4 [
-	itrn 1 [
-		....
-	]
-
-	....
-
-	itrn 3 [
-		....
-	]
-
-]
-
+	Prompt "crst" gives 0 on failure, and 1 on success.
+	Prompt "erDt" provides the ID of the kind of error that occured. This prompt should
+		only be used when prompt "crst" gives 1. 
 
 --------
 
+rplc {0110:4, 1, cntnr}: 30
 
-cycl [
-	....
-]
+Command "rplc" replaces a gene in a container.
+
+	Prompt "crst" gives 0 on failure, and 1 on success.
+	Prompt "erDt" provides the ID of the kind of error that occured. This prompt should
+		only be used when prompt "crst" gives 1. 
+
+--------
+
+read {2, 2, cntnr}: 40
+	rslt:40
+
+	Prompt "crst" gives 0 on failure, and 1 on success.
+	Prompt "erDt" provides the ID of the kind of error that occured. This prompt should
+		only be used when prompt "crst" gives 1. 
+	Prompt "gene" provides the read gene.
+	
+--------
+
+rmve {2, 2, cntnr}: 50
+
+	Prompt "crst" gives 0 on failure, and 1 on success.
+	Prompt "erDt" provides the ID of the kind of error that occured. This prompt should
+		only be used when prompt "crst" gives 1. 
+
+--------
+
+lngt {cntnr}: 60
+	rslt:60
+
+	Prompt "crst" gives 0 on failure, and 1 on success.
+	Prompt "erDt" provides the ID of the kind of error that occured. This prompt should
+		only be used when prompt "crst" gives 1. 
+	Prompt "gene" provides the length.
+
+--------
+
+cExt {cntnr}: 70
+	gene:70
+
+	Prompt "gene" provides the read gene.
+
 
