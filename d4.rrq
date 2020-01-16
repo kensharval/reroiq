@@ -1,39 +1,35 @@
-if|| {#memX idnt $regX} [
+if$$ {!memX idnt $regX} [
 	....
 ]
-	#memX idnt {$regX, $regY, $regZ}
+	$regX idnt {!memX, !memY, !memZ}
 	()
 	&
 	|
 	!
 
-
 --------
-
 
 ordn [
 	....
-] btIf {....} [
+] bIf$ {....} [
 	....
-] btIf {....} [
+] bIf$ {....} [
 	....
 ]
 
-
 --------
 
-
-chse {#memX} [
-	0000:4, 0001:4: []
-	0010:4 []
+chse {$regX} [
+	fffl:4, llfl:4 [
+		....
+	]
+	ffff:4 []
 	dflt []
 ]
 
-
 --------
 
-
-rept 4 [
+rept {4} [
 	itrn 1 [
 		....
 	]
@@ -46,9 +42,7 @@ rept 4 [
 
 ]
 
-
 --------
-
 
 cycl [
 	....

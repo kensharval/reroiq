@@ -1,69 +1,78 @@
 crte {cntnr}: 10
+create
+
 	crst:10
-	erDt:10
+	eDtl:10
 
-Command "crte" creates a container.
+Command "crte" creates the container.
 
-	Prompt "crst" gives 0 on failure, and 1 on success.
-	Prompt "erDt" provides the ID of the kind of error that occured. This prompt should
-		only be used when prompt "crst" gives 1. Possible values include: 0 (name
-		already in use).
+	Prompt "crst" gives the f bit on failure, and the l bit on success.
+	Prompt "eDtl" provides the ID of the kind of error that occured. This prompt should
+		only be used when prompt "crst" gives the f bit.
 
 --------
 
-add| {0010:4, n, cntnr}: 20
+add$ {0010:4, n, cntnr}: 20
+add
+
 	crst:20
-	erDt:20
+	eDtl:20
 
-Command "add$" add a gene to a container.
+Command "add$" adds a notation to the container.
 
-	Prompt "crst" gives 0 on failure, and 1 on success.
-	Prompt "erDt" provides the ID of the kind of error that occured. This prompt should
-		only be used when prompt "crst" gives 1. 
+	Prompt "crst" gives the f bit on failure, and the l bit on success.
+	Prompt "eDtl" provides the ID of the kind of error that occured. This prompt should
+		only be used when prompt "crst" gives the f bit. 
 
 --------
 
-rplc {0110:4, 1, cntnr}: 30
+put$ {0110:4, 1, cntnr}: 30
+put
 
-Command "rplc" replaces a gene in a container.
+Command "put$" puts a notation in the container.
 
-	Prompt "crst" gives 0 on failure, and 1 on success.
-	Prompt "erDt" provides the ID of the kind of error that occured. This prompt should
-		only be used when prompt "crst" gives 1. 
+	Prompt "crst" gives the f bit on failure, and the l bit on success.
+	Prompt "eDtl" provides the ID of the kind of error that occured. This prompt should
+		only be used when prompt "crst" gives the f bit.
 
 --------
 
 read {2, 2, cntnr}: 40
+read
+
 	rslt:40
 
-	Prompt "crst" gives 0 on failure, and 1 on success.
-	Prompt "erDt" provides the ID of the kind of error that occured. This prompt should
-		only be used when prompt "crst" gives 1. 
-	Prompt "gene" provides the read gene.
+	Prompt "crst" gives the f bit on failure, and the l bit on success.
+	Prompt "eDtl" provides the ID of the kind of error that occured. This prompt should
+		only be used when prompt "crst" gives the f bit.
+	Prompt "rslt" provides the read gene.
 	
 --------
 
 rmve {2, 2, cntnr}: 50
+remove
 
-	Prompt "crst" gives 0 on failure, and 1 on success.
-	Prompt "erDt" provides the ID of the kind of error that occured. This prompt should
-		only be used when prompt "crst" gives 1. 
+	Prompt "crst" gives the f bit on failure, and the l bit on success.
+	Prompt "eDtl" provides the ID of the kind of error that occured. This prompt should
+		only be used when prompt "crst" gives the f bit.
 
 --------
 
 lngt {cntnr}: 60
+length
+
+	crst:60
+	eDtl:60
 	rslt:60
 
-	Prompt "crst" gives 0 on failure, and 1 on success.
-	Prompt "erDt" provides the ID of the kind of error that occured. This prompt should
-		only be used when prompt "crst" gives 1. 
-	Prompt "gene" provides the length.
+	Prompt "crst" gives the f bit on failure, and the l bit on success.
+	Prompt "eDtl" provides the ID of the kind of error that occured. This prompt should
+		only be used when prompt "crst" gives the f bit.
+	Prompt "rslt" provides the length.
 
 --------
 
-cExt {cntnr}: 70
-	gene:70
+cExs {cntnr}: 70
+check existence
 
-	Prompt "gene" provides the read gene.
-
-
+	rslt:70
