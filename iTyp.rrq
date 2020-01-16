@@ -1,7 +1,7 @@
-if$$ {!memX idnt $regX} [
+if$$ {!memX idnt #regX} [
 	....
 ]
-	$regX idnt {!memX, !memY, !memZ}
+	#regX idnt {!memX, !memY, !memZ}
 	()
 	&
 	|
@@ -19,7 +19,7 @@ ordn [
 
 --------
 
-chse {$regX} [
+chse {#regX} [
 	fffl:4, llfl:4 [
 		....
 	]
@@ -47,4 +47,12 @@ rept {4} [
 cycl [
 	....
 ]
+
+
+########
+
+
+idnt
+goto
+end$
 
